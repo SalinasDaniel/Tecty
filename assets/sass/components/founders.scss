@@ -1,0 +1,46 @@
+body {
+    main {
+        .founders {
+            background: linear-gradient(to top, #3B00A4 0%, #007889 100%);
+            text-align: center;
+            color: #FFFFFF;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            @include breakpoint(phone) {
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+            svg {
+                margin-top: -135px;
+                @include breakpoint(phone) {
+                    display: none;
+                }
+                @include breakpoint(tablet) {
+                    display: none;
+                }
+            }
+            h2 {
+                font-size: 47px;
+            }
+            .items {
+                margin-top: 90px;
+                margin-right: 0;
+                padding-left: 10%;
+                padding-right: 10%;
+                @include breakpoint(tablet) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .item {
+                    @include breakpoint(phone) {
+                        margin-bottom: 50px;
+                    }
+                    p:nth-child(2) {
+                        padding-left: 20%;
+                        padding-right: 20%;
+                    }
+                }
+            }
+        }
+    }
+}

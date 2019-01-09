@@ -1,0 +1,85 @@
+body {
+    main {
+        .slider {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            background-color: #FFFFFF;
+            padding-bottom: 7%;
+            @include breakpoint(phone) {
+                padding-bottom: 15%;
+            }
+            .items {
+                .item1 {
+                    padding-top: 15%;
+                    padding-left: 13%;
+                    @include breakpoint(phone) {
+                        padding-right: 10%;
+                        padding-left: 10%;
+                        padding-top: 106%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 10%;
+                    }
+                    p {
+                        font-size: 25px;
+                    }
+                    h2 {
+                        font-size: 37px;
+                        @include breakpoint(phone) {
+                            font-size: 28px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 38px;
+                        }
+                    }
+                    ul {
+                        font-size: 25px;
+                        margin-left: 7%;
+                        margin-top: 20px;
+                        @include breakpoint(phone) {
+                            font-size: 20px;
+                            margin-left: 11%;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 21px;
+                            margin-left: 10%;
+                        }
+                    }
+                    .btn {
+                        color: #004D94;
+                        background-color: #FFFFFF;
+                        font-size: 23px;
+                        border: solid 1px #004D94;
+                        transition: 1s;
+                        border-radius: 52px;
+                        width: 47%;
+                        margin-top: 15px;
+                        @include breakpoint(phone) {
+                            width: 80%;
+                            margin-left: 9%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 85%;
+                        }
+                    }
+                    .btn:hover {
+                        background-color: #004D94;
+                        color: #FFFFFF;
+                    }
+                }
+                .item2 {
+                    text-align: right;
+                    @include breakpoint(phone) {
+                        position: absolute;
+                    }
+                    img {
+                        @include breakpoint(phone) {
+                            width: 111%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

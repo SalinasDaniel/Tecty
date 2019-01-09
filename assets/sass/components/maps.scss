@@ -1,0 +1,38 @@
+body {
+    main {
+        .maps {
+            background-image: url('../../assets/images/Fondo-Mapas.jpg');
+            background-size: cover;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            @include breakpoint(phone) {
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+            h2 {
+                font-size: 50px;
+                color: #3B00A4;
+                text-align: center;
+                margin-bottom: 80px;
+                @include breakpoint(phone) {
+                    font-size: 23px;
+                }
+            }
+            .items {
+                margin-right: 0;
+                justify-content: center;
+                .gmaps {
+                    height: 400px;
+                    width: 70%;
+                    border-radius: 25px;
+                    -webkit-box-shadow: 0px 2px 22px 0px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 0px 2px 22px 0px rgba(0, 0, 0, 0.75);
+                    box-shadow: 0px 2px 22px 0px rgba(0, 0, 0, 0.75);
+                    @include breakpoint(phone) {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

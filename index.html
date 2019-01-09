@@ -2,20 +2,376 @@
 <html lang="es">
 
 <head>
-    <title></title>
+    <title>Tecty</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <link href="index.php" rel="canonical">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/jquery.gmaps.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.gmaps.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <section class="logo-contact">
+            <div class="row items">
+                <div class="col-sm-4 item1">
+                    <h1>Tecty</h1>
+                </div>
+                <div class="col-sm-4 item2">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="col-sm-4 item3">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>319 2585 464</p>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="nav-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Servicio-al-Cliente.html">Servicio al cliente</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
     <main>
+        <section class="slider">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-items">
+                        <div class="row items">
+                            <div class="col-sm-6 item1">
+                                <p>Déjalo como nuevo con Tecty.</p>
+                                <h2>No te apresures a comprar <br> <strong>un nuevo computador.</strong></h2>
+                                <ul class="fa-ul">
+                                    <li><i class="fa-li fas fa-check"></i>Servicio técnico a domicilio.</li>
+                                    <li><i class="fa-li fas fa-check"></i>Reparaciones garantizadas.</li>
+                                    <li><i class="fa-li fas fa-check"></i>Procedimientos rápidos y efectivos.</li>
+                                </ul>
+                                <button class="btn btn-default">AGENDAR AHORA</button>
+                            </div>
+                            <div class="col-sm-6 item2">
+                                <img src="assets/images/Como-Nuevo.png" alt="Computador">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="help-block">
+            <img class="elec" src="assets/images/Rayos.png" alt="Tecty">
+            <div class="row video">
+                <iframe src="https://www.youtube.com/embed/sz_yzU2vLXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <hr>
+            </div>
+            <div class="row items">
+                <h2>¿Cómo podemos ayudarte?</h2>
+                <div class="col-sm-4 item">
+                    <img src="assets/images/Formateo.png" alt="Formateo Seguro">
+                    <p>FORMATEO <br> SEGURO</p>
+                    <p class="inf">Más Información</p>
+                    <hr>
+                </div>
+                <div class="col-sm-4 item">
+                    <img src="assets/images/Instalacion.png" alt="Instalcion Programas">
+                    <p>INSTALACIÓN <br> PROGRAMAS</p>
+                    <p class="inf">Más Información</p>
+                    <hr>
+                </div>
+                <div class="col-sm-4 item">
+                    <img src="assets/images/Limpieza.png" alt="Limpieza Interna">
+                    <p>LIMPIEZA <br> INTERNA</p>
+                    <p class="inf">Más Información</p>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <section class="appointment">
+            <div class="row items"></div>
+        </section>
+        <section class="pc-care">
+            <h2>Déjanos cuidar tu computador</h2>
+            <h3>En las manos expertas liberará todo su potencial.</h3>
+            <div class="row items">
+                <div class="col-sm-8 item1">
+                    <img src="assets/images/Cuidados-Pc.png" alt="Cuidando tu Pc">
+                </div>
+                <div class="col-sm-4 item2">
+                    <div class="it">
+                        <img src="assets/images/Velocidad.png">
+                        <p>Puntualidad y <br> Compromiso.</p>
+                    </div>
+                    <div class="it">
+                        <img src="assets/images/Comunicacion.png">
+                        <p>Comunicación <br> Clara y Fácil.</p>
+                    </div>
+                    <div class="it">
+                        <img src="assets/images/Proteccion.png">
+                        <p>Comunicación <br> Clara y Fácil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="works">
+            <div class="wavy">
+                <svg viewBox="0 0 500 100" preserveAspectRatio="xMinYMin meet">
+                    <path d="M0,10 C300,100 550,0 500,0 L200,00 L0,0 Z" style="stroke: none; fill:#EDEDED;"></path>
+                </svg>
+            </div>
+            <img class="elec" src="assets/images/Rayos.png" alt="Tecty">
+            <h2>¿Cómo Funciona?</h2>
+            <div class="row items">
+                <div class="col-sm-4 item">
+                    <img src="assets/images/Funcion-1.png" alt="Funciones">
+                    <p>Agenda tu Cita. <br> Día y Hora </p>
+                </div>
+                <div class="col-sm-4 item">
+                    <img src="assets/images/Funcion-2.png" alt="Funciones">
+                    <p>Recibe a tu <br> técnico asignado.</p>
+                </div>
+                <div class="col-sm-4 item">
+                    <img src="assets/images/Funcion-3.png" alt="Funciones">
+                    <p>Conviértete en <br> un cliente feliz :)</p>
+                </div>
+            </div>
+            <hr>
+            <button class="btn btn-default">EMPEZAR AHORA</button>
+        </section>
+        <section class="column">
+            <div class="row items">
+                <div class="col-sm-6 item1">
+                    <img src="assets/images/Pc-mal-estado.png" alt="Sin virus y mas Velocidad">
+                </div>
+                <div class="col-sm-6 item2">
+                    <h2>Despídete de los virus <br> y la baja velocidad.</h2>
+                    <button class="btn btn-default">¡Quiero a Tecty!</button>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial-slider">
+            <div class="container text-center my-3">
+                <div class="row mx-auto my-auto">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#recipeCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#recipeCarousel" data-slide-to="1"></li>
+                            <li data-target="#recipeCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner w-100" role="listbox">
+                            <h2>¿Ya eres un cliente satisfecho?</h2>
+                            <div class="carousel-item active">
+                                <div class="d-block commentary col-4">
+                                    <article>
+                                        <img src="assets/images/Perfil.png" alt="Perfil Testimonio"><br>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <p>“Amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Pamet, consectetuer adipiscing elit, mod.”</p>
+                                        <hr>
+                                        <p>Marina Layer</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-block commentary col-4">
+                                    <article>
+                                        <img src="assets/images/Perfil.png" alt="Perfil Testimonio"><br>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <p>“Amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Pamet, consectetuer adipiscing elit, mod.”</p>
+                                        <hr>
+                                        <p>Marina Layer</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-block commentary col-4">
+                                    <article>
+                                        <img src="assets/images/Perfil.png" alt="Perfil Testimonio"><br>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <p>“Amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Pamet, consectetuer adipiscing elit, mod.”</p>
+                                        <hr>
+                                        <p>Marina Layer</p>
+                                    </article>
+                                </div>
+                            </div>
 
+                        </div>
+                        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row video">
+                <iframe src="https://www.youtube.com/embed/sz_yzU2vLXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="img">
+                <img src="assets/images/Tuerca.png" alt="Tuerca">
+            </div>
+        </section>
+        <section class="colunm-2">
+            <div class="row items">
+                <div class="col-sm-7 item1">
+                    <h2>Habilita tu máximo potencial.</h2>
+                    <p>Mejora tu productividad con un <br> computador más veloz y efectivo.</p>
+                    <button class="btn btn-default">¡Quiero a Tecty!</button>
+                </div>
+                <div class="col-sm-5 item2">
+                    <img src="assets/images/Potencial.png" alt="Maximo Potencial PC">
+                </div>
+            </div>
+        </section>
+        <section class="whatsapp">
+            <article>
+                <h2>¿Quieres hablar con un experto?</h2>
+                <p>Escribe ahora a nuestro Whatsapp.</p>
+            </article>
+            <a href="https://api.whatsapp.com/send?phone=573192585464" target="_blank">
+                <img src="assets/images/whatsapp.png" alt="Whatsapp"></a>
+        </section>
+        <section class="accordion">
+            <h2>Preguntas Frecuentes</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <span>¿Cuál es el tiempo estimado para llegar?</span>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-caret-down"></i>
+                          </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <span>¿Qué tipo de garantía ofrece el servicio?</span>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-caret-down"></i>
+                          </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <span class="text3">¿Qué sucede si pierdo mi cita?</span>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fas fa-caret-down"></i>
+                          </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <span class="text4">¿Se debe pagar algo adicional al servicio?</span>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fas fa-caret-down"></i>
+                          </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="maps">
+            <h2>¡Visita nuestro centro de operaciones!</h2>
+            <div class="row items">
+                <div data-key="AIzaSyDwNBXmHBDQ29JWsRH8gwNVkf7mM0-flaI" data-control-zoom="true" data-control-type="true" data-control-scale="true" data-control-streetview="true" data-control-rotate="true" data-event-mousewheel="true" data-zoom="13" role="map" class="gmaps">
+                    <!-- items de ubicaciones -->
+                    <div data-id="1" data-lat="4.719992899999999" data-lng="-74.05363599999998" data-marker-image="assets/images/Marcador.png" data-marker-width="35" data-marker-height="43" class="marker">
+                        <p>Carrera 46# 134a - 15</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
 <footer>
-
+    <div class="row group">
+        <div class="col-sm-4 item1">
+            <img src="assets/images/Rayo.png">
+            <div class="iconos">
+                <i class="fab fa-twitter"></i>
+                <br>
+                <i class="fab fa-instagram"></i>
+                <br>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <hr>
+        </div>
+        <div class="col-sm-4 item2">
+            <h2>Tecty</h2>
+            <p><i class="fas fa-bolt"></i>Inicio</p>
+            <p><i class="fas fa-bolt"></i>Nosotros</p>
+            <p><i class="fas fa-bolt"></i>Servicio al cliente</p>
+            <hr>
+        </div>
+        <div class="col-sm-4 item3">
+            <h2>Encuéntranos</h2>
+            <p><i class="fas fa-map-marker-alt"></i>Carrera 46# 134a - 15</p>
+            <p><i class="fas fa-phone-volume"></i>319 2585 464</p>
+            <p><i class="fas fa-envelope"></i>Tecty@gmail.com</p>
+        </div>
+    </div>
+    <div class="Copyright">
+        <p>© Copyright 2019 | Sitio web diseñado y creado por Neuropúblico Agencia de Neuromarketing Digital</p>
+    </div>
 </footer>

@@ -1,0 +1,74 @@
+body {
+    main {
+        .colunm-2 {
+            background-color: #FFFFFF;
+            .items {
+                margin-right: 0;
+                padding-bottom: 3%;
+                @include breakpoint(phone) {
+                    padding-bottom: 25%;
+                }
+                .item1 {
+                    padding-left: 10%;
+                    padding-top: 7%;
+                    @include breakpoint(phone) {
+                        padding-top: 80%;
+                        text-align: center;
+                    }
+                    h2 {
+                        color: #3B00A4;
+                        font-size: 46px;
+                        @include breakpoint(phone) {
+                            font-size: 32px;
+                            text-align: left;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 40px;
+                        }
+                    }
+                    p {
+                        font-size: 33px;
+                        color: #606060;
+                        line-height: 1;
+                        @include breakpoint(phone) {
+                            font-size: 22px;
+                            text-align: left;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 24px;
+                        }
+                    }
+                    .btn {
+                        color: #FF0808;
+                        border: solid 1px #FF0808;
+                        background-color: #FFFFFF;
+                        transition: 1s;
+                        font-size: 26px;
+                        border-radius: 36px;
+                        @include breakpoint(phone) {
+                            margin-top: 15px;
+                        }
+                    }
+                    .btn:hover {
+                        color: #FFFFFF;
+                        background-color: #FF0808;
+                        border: solid 1px #FFFFFF;
+                    }
+                }
+                .item2 {
+                    text-align: right;
+                    @include breakpoint(phone) {
+                        position: absolute;
+                    }
+                    img {
+                        margin-top: -124px;
+                        @include breakpoint(phone) {
+                            margin-top: -62px;
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

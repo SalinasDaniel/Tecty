@@ -1,0 +1,60 @@
+body {
+    main {
+        .slider-Nosotros {
+            background-color: #FFFFFF;
+            padding-bottom: 7%;
+            @include breakpoint(phone) {
+                padding-bottom: 15%;
+            }
+            .items {
+                .item1 {
+                    padding-top: 15%;
+                    padding-left: 19%;
+                    @include breakpoint(phone) {
+                        padding-right: 11%;
+                        padding-left: 12%;
+                        padding-top: 67%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 7%;
+                    }
+                    p {
+                        font-size: 20px;
+                        color: #8C8C8C;
+                    }
+                    h2 {
+                        font-size: 37px;
+                        margin-bottom: 30px;
+                        @include breakpoint(phone) {
+                            font-size: 28px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 38px;
+                        }
+                    }
+                }
+                .item2 {
+                    padding-top: 24%;
+                    padding-left: 7%;
+                    @include breakpoint(phone) {
+                        padding-top: 34%;
+                        padding-left: 14%;
+                        position: absolute;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 0%;
+                        padding-top: 30%;
+                    }
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+body {
+    main {
+        .works {
+            color: #FFFFFF;
+            text-align: center;
+            background: linear-gradient(to bottom, #3c00a4 0%, #007989 0%, #3c00a4 51%, #3c00a4 100%);
+            padding-bottom: 14%;
+            @include breakpoint(phone) {
+                padding-bottom: 44%;
+                padding-top: 30%;
+            }
+            @include breakpoint(tablet) {
+                padding-bottom: 30%;
+            }
+            .wavy {
+                @include breakpoint(phone) {
+                    display: none;
+                }
+            }
+            .elec {
+                opacity: .1;
+                position: absolute;
+                left: 0;
+                width: 61%;
+                margin-top: -307px;
+                @include breakpoint(phone) {
+                    display: none;
+                }
+                @include breakpoint(tablet) {
+                    display: none;
+                }
+            }
+            h2 {
+                font-size: 50px;
+                margin-bottom: 70px;
+            }
+            .items {
+                position: absolute;
+                z-index: 1;
+                width: 67%;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                @include breakpoint(phone) {
+                    position: relative;
+                    left: 54%;
+                }
+                .item {
+                    @include breakpoint(phone) {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            hr {
+                border: 2px dashed #FFFFFF;
+                border-style: none none dashed;
+                position: absolute;
+                width: 50%;
+                z-index: 0;
+                left: 50%;
+                margin-top: 75px;
+                transform: translate(-50%, 0%);
+                @include breakpoint(phone) {
+                    display: none;
+                }
+            }
+            .btn {
+                margin-top: 290px;
+                color: #FFFFFF;
+                background-color: #FF0808;
+                border: solid 1px #FF0808;
+                margin-right: 1.2%;
+                width: 13%;
+                border-radius: 32px;
+                transition: 1s;
+                @include breakpoint(phone) {
+                    margin-top: 15px;
+                    width: 50%;
+                }
+                @include breakpoint(tablet) {
+                    width: 25%;
+                }
+            }
+            .btn:hover {
+                color: #FF0808;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}

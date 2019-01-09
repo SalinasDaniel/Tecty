@@ -1,0 +1,54 @@
+body {
+    header {
+        .menu {
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+            top: 72px;
+            @include breakpoint(phone) {
+                padding-left: 0;
+                top: 1%;
+            }
+            @include breakpoint(tablet) {
+                top: 77px;
+                padding-left: 7%;
+            }
+            @include breakpoint(desktop) {
+                padding-left: 10.3%;
+            }
+            .navbar {
+                .navbar-toggler {
+                    border: none;
+                }
+                .navbar-collapse {
+                    @include breakpoint(phone) {
+                        margin-top: 14px;
+                        padding-left: 4%;
+                        background-color: #FFFFFF;
+                    }
+                    #nav-menu {
+                        width: 100%;
+                    }
+                }
+                .nav-item {
+                    margin-top: -7px;
+                    margin-right: 3%;
+                    .nav-link {
+                        color: #B5B5B5;
+                    }
+                }
+                .active,
+                .nav-item:hover {
+                    border-top: solid 4px #3B00A4;
+                    border-radius: 4px;
+                    @include breakpoint(phone) {
+                        border-top: none;
+                    }
+                    @include breakpoint(tablet) {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+body {
+    main {
+        .pc-care {
+            color: #3B00A4;
+            margin-top: 650px;
+            h2,
+            h3 {
+                text-align: center;
+            }
+            h2 {
+                font-size: 50px;
+                @include breakpoint(phone) {
+                    font-size: 31px;
+                }
+            }
+            h3 {
+                font-size: 24px;
+            }
+            .items {
+                margin-right: 0px;
+                margin-left: 0px;
+                margin-top: 100px;
+                .item1 {
+                    text-align: center;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 100%;
+                        }
+                    }
+                }
+                .item2 {
+                    @include breakpoint(phone) {
+                        margin-top: 50px;
+                    }
+                    .it {
+                        display: flex;
+                        margin-bottom: 35px;
+                        p {
+                            margin-top: 28px;
+                            margin-left: 2%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

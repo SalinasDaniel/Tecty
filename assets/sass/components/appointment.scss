@@ -1,0 +1,27 @@
+body {
+    main {
+        .appointment {
+            margin-top: -120px;
+            .items {
+                background-color: #FFFFFF;
+                height: 460px;
+                position: absolute;
+                left: 51%;
+                transform: translate(-50%, -50%);
+                margin-top: 207px;
+                width: 1289px;
+                border-radius: 35px;
+                box-shadow: 0px 2px 29px 0px rgba(0, 0, 0, 0.75);
+                @include breakpoint(phone) {
+                    left: 54%;
+                    width: 308px;
+                }
+                @include breakpoint(tablet) {
+                    left: 52%;
+                    margin-top: 260px;
+                    width: 662px;
+                }
+            }
+        }
+    }
+}
